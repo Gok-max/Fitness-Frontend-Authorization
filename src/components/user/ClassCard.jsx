@@ -78,7 +78,7 @@ console.log(data,path,authenticate,"data")
 
       // Configure Razorpay payment options
       const options = {
-        key:'rzp_test_0n7wk0znzJmOxP', // Client-side key
+        key:process.env.RAZORPAY_KEY_ID
         amount: data.amount,
         currency: data.currency,
         name: "Fitness Class Booking",
